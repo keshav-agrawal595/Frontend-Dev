@@ -1,0 +1,93 @@
+1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+
+Ans. Frontend Development: Deals with what the user sees on the screen (computer screen) — layouts, the colors, buttons, and text. 
+It uses HTML, CSS, JS, React.js, etc.
+Example: Designing a form.
+
+Backend Development: Handles how the website works behind the scenes () — server, database, and security. 
+It uses languages like Python, Java, PHP, Node.js, etc.
+Example: Storing user login details in a database.
+
+Full-Stack Development: A developer who works on both frontend and backend.
+Example: Building a complete website
+
+2. Create a simple diagram showing how the client-server model works in web architecture.
+
+Ans.      +---------------------+
+          |     Client (User)   |
+          |  Web Browser / App  |
+          +----------+----------+
+                    |
+                    |  Request (e.g. open website)
+                    ↓
+          +----------+----------+
+          |       Server        |
+          |  Web Server / App   |
+          +----------+----------+
+                    |
+                    | Fetch / Store Data
+                    ↓
+          +----------+----------+
+          |       Database       |
+          | Stores website data  |
+          +----------------------+
+
+
+3. Describe how a browser requests and displays a web page from a web server.
+
+Ans. We type a URL in the browser. -> The browser sends a request to the web server.
+The server finds the requested page and sends back the requested files.
+The browser then reads these files and displays the page on your screen.
+
+4. Identify and list the tools required to set up a web development environment. Explain the
+purpose of each.
+
+Ans. Code Editor (VS Code) - To write and edit code easily.
+Browser (Chrome) -	To test and view websites.
+Version Control (Git, GitHub) - To track and manage code changes.
+
+5. Explain what a web server is and give examples of commonly used servers.
+
+Ans. A web server is software that delivers web pages to users when they send a request through a browser.
+Examples: Ngnix, PHP, Apache, etc.
+It stores, processes, and displays website files (like HTML, images, and data).
+
+6. Define the roles of a frontend developer, backend developer, and database administrator
+in a project.
+
+Ans. Frontend Developer: Designs and codes the user interface.
+Backend Developer: Builds the logic, manages servers, and connects to the database.
+Database Administrator (DBA): Manages databases, ensures data security, backups, and performance.
+
+8. Explain the difference between static and dynamic websites. Provide an example of
+each.
+
+Ans. Static Website: Fixed content; same page is displayed for everyone.
+Example: A portfolio or company info site.
+
+Dynamic Website: Content changes dynamically based on users or data.
+Example: YouTube (shows different videos).
+
+9. Research and list five web browsers. Explain how rendering engines differ between
+them.
+
+Ans. Browsers: Google Chrome, Brave, Microsoft Edge, Mozilla Firefox, Apple Safari.
+Rendering engines: 
+Chrome & Brave – Blink
+Edge – Blink
+Firefox – Gecko
+Safari – WebKit
+They differ in how they read and show web pages.
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server,
+database, and APIs.
+
+Ans.     Client (Browser)
+             ↓
+         Internet
+            ↓
+    Server → Database
+            ↑
+          APIs
+

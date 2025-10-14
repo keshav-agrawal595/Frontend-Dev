@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Course Registration</title>
+</head>
+
+<body>
+    <header>
+    <h1>Course Registration Form</h1>
+    </header>
+    
+    <main>
+    <form>
+    <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Course Selection</legend>
+    <label for="course">Choose a course:</label><br>
+    <select id="course" name="course">
+    <option selected>--Select--</option>
+    <option>Web Development</option>
+    <option>Data Science</option>
+    <option>Machine Learning</option>
+    </select>
+    </fieldset>
+    </form>
+
+    <h2>Available Schedules</h2>
+    <table border="1">
+    <thead>
+    <tr><th>Day</th><th>Time</th><th>Instructor</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>Monday</td><td>10:00 - 12:00</td><td>Dr. A</td></tr>
+    <tr><td>Wednesday</td><td>14:00 - 16:00</td><td>Prof. B</td></tr>
+    <tr><td>Friday</td><td>18:00 - 20:00</td><td>Ms. C</td></tr>
+    </tbody>
+    </table>
+    </main>
+
+    <footer>
+    <p>© 2025 Training Institute</p>
+    </footer>
+</body>
+</html>

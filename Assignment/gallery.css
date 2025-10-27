@@ -1,0 +1,51 @@
+/* Responsive gallery using grid and CSS-only hover overlay */
+body { font-family: Arial, sans-serif; margin: 0; padding: 1.5rem; background: #fafafa; color: #111; }
+header h1 { text-align: center; margin-bottom: 1rem; }
+
+/* Grid layout — adjusts column count with minmax */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Item container */
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+
+/* Images fill container */
+.item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Caption overlay hidden by default */
+.item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Hover: scale and show caption */
+.item:hover img { transform: scale(1.08); }
+.item:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive note: grid auto-fits so image count per row changes with width */

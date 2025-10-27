@@ -1,0 +1,35 @@
+body { margin: 0; font-family: Arial, sans-serif; color: #222; }
+header {
+  background-color: #d16ba5;
+  padding: 1em;
+  color: white;
+  text-align: center;
+}
+nav a { color: white; margin: 0 1em; text-decoration: none; }
+
+section {
+  padding: 3em;
+  text-align: center;
+}
+
+.fixed-bg {
+  background: url('jaipur.jpg') center/cover no-repeat fixed;
+  color: white;
+}
+
+.radial {
+  background: radial-gradient(circle, #f9d423, #ff4e50);
+  color: #222;
+}
+
+.gradient {
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  color: white;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}

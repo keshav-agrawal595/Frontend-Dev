@@ -1,0 +1,49 @@
+/* Header fixed at top */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0b132b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.nav a:hover { text-decoration: underline; }
+
+.main-section {
+  margin-top: 15vh; /* leaving space for fixed header */
+  padding: 2em;
+  background-color: #f9f9f9;
+  min-height: 70vh;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer {
+  background-color: #1c2541;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

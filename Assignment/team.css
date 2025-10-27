@@ -1,0 +1,20 @@
+body { font-family: Arial, sans-serif; text-align: center; margin: 0; }
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  gap: 1.5em;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1em;
+}
+.lead {
+  background: #dbeafe;
+  border: 2px solid #2563eb;
+}

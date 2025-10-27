@@ -1,0 +1,58 @@
+/* Pricing layout: three equal columns using grid */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 2rem; 
+    color: #111; 
+    background: #f7fafc; 
+}
+header h1 { 
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+}
+
+/* Grid with equal columns */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  align-items: stretch; /* equal height boxes */
+}
+
+/* Plan box styles */
+.plan {
+  background: #fff;
+  border: 2px solid rgba(15,23,42,0.06);
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, background-color 0.25s ease; /* smooth transition */
+}
+
+/* Price */
+.price { font-size: 1.5rem; font-weight: 700; margin: 0.5rem 0; }
+
+/* Button style as link */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.08);
+  text-align: center;
+}
+
+/* Hover effect: enlarge and change background */
+.plan:hover {
+  transform: scale(1.03);
+  background-color: rgba(31,122,140,0.04);
+}
+
+/* Popular plan highlighted */
+.popular {
+  border: 3px solid #ff8a65;
+  background: linear-gradient(180deg, rgba(255,138,101,0.06), #fff);
+}

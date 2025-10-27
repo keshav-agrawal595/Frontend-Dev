@@ -1,0 +1,65 @@
+/* Center the form vertically and horizontally */
+* { 
+    box-sizing: border-box; 
+}
+
+body, html { 
+    height: 100%; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background: #f3f6f9; 
+}
+
+.center {
+  min-height: 100%;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  padding: 1rem;
+}
+
+/* Form styling */
+.contact-form {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+}
+
+/* Inputs */
+.contact-form label { 
+    display: block; 
+    margin-top: 0.75rem; 
+    font-weight: 600; 
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.35rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.02);
+}
+
+/* Focus state changes border color */
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.08);
+}
+
+/* Button */
+.submit {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #1f7a8c;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Spacing between fields is handled via label + margin, no tables used */

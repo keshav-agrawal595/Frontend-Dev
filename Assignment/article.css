@@ -1,0 +1,50 @@
+/* Paragraph spacing and typographic emphasis */
+body { 
+    font-family: "Times New Roman", Times, serif; 
+    margin: 2rem; 
+    color: #111; 
+}
+
+header h1 { 
+    font-size: 2.25rem; 
+    margin-bottom: 0.5rem; 
+}
+
+/* Subheading with author and date */
+.meta { font-size: 0.95rem; color: #555; margin-bottom: 1.5rem; }
+
+/* Paragraphs: consistent margin */
+article p {
+  margin: 1rem 0; /* spacing between paragraphs */
+  text-align: justify;
+  font-size: 1.05rem;
+}
+
+/* Style the first letter larger */
+article p::first-letter {
+  font-size: 2.2rem;
+  font-weight: 700;
+  float: left;
+  line-height: 1;
+  padding-right: 0.35rem;
+}
+
+/* Make the first line bold */
+article p::first-line {
+  font-weight: 700;
+}
+
+/* Custom mark styling */
+mark {
+  background-color: rgba(255, 230, 120, 0.8);
+  padding: 0.1rem 0.2rem;
+  border-radius: 3px;
+}
+
+/* Blockquote emphasis with left border and background */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 6px solid rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.03);
+}

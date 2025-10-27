@@ -1,0 +1,70 @@
+/* Fixed header and two-column layout using flex */
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    min-height: 100vh; 
+}
+
+/* Header fixed at top */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0d1b2a;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+}
+
+/* Layout: reserve space for fixed header using margin-top on layout */
+.layout {
+  display: flex;
+  gap: 1rem;
+  margin-top: 72px; /* leave room for fixed header */
+  height: calc(100vh - 72px);
+}
+
+/* Sidebar: left, full height */
+.sidebar {
+  width: 220px;
+  background: #f7fafc;
+  padding: 1rem;
+  border-right: 1px solid rgba(0,0,0,0.04);
+  overflow-y: auto; /* allows scroll for long nav */
+}
+
+/* Sidebar nav links */
+.sidebar nav a {
+  display: block;
+  padding: 0.6rem 0.4rem;
+  color: #111;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+/* Main content grows to fill space */
+.content {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Content boxes with shadow and spacing */
+.cards {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+.box {
+  flex: 1;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+}

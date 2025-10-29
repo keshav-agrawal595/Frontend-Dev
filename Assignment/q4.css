@@ -1,0 +1,36 @@
+body {
+	font-family: system-ui, "Segoe UI", Arial;
+	margin: 24px;
+}
+
+.cards {
+	display: flex;
+	gap: 18px;
+	align-items: flex-start;
+}
+
+.card {
+	background: #fff;
+	padding: 18px;
+	border-radius: 8px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+	transition: box-shadow 0.25s ease, transform 0.25s ease;
+	width: 200px;
+}
+
+.card h3 {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card.strong {
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card.inset {
+	box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25);
+}

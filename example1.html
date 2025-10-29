@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Lift Transition</title>
+
+    <style>
+        .card {
+            width: 250px;
+            height: 160px;
+            background-color: #4a90e2;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 40px auto;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .card:hover {   
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Card Transition</h2>
+
+    <div class="card">Hover Me</div>
+</body>
+
+</html>

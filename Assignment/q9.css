@@ -1,0 +1,36 @@
+
+body {
+	font-family: Arial;
+	padding: 28px;
+}
+
+.simple-form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	max-width: 360px;
+}
+
+input,
+textarea {
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* default outlines */
+input:focus,
+textarea:focus {
+	outline: 3px solid #5dade2;
+	outline-offset: 3px;
+}
+
+button {
+	padding: 10px 14px;
+	border-radius: 6px;
+	border: 1px solid #2d6;
+	cursor: pointer;
+	background: #2ecc71;
+	color: #fff;
+}

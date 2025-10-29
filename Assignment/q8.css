@@ -1,0 +1,42 @@
+
+body {
+	font-family: Arial;
+	padding: 24px;
+}
+
+.center {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.box-model {
+	background: transparent;
+}
+
+.margin {
+	background: #fdebd0;
+	padding: 12px;
+	margin: 18px;
+}
+
+.border {
+	background: #f8d7da;
+	border: 4px solid #c0392b;
+	padding: 12px;
+}
+
+.padding {
+	background: #d6eaf8;
+	padding: 16px;
+}
+
+.content {
+	background: #e8f5e9;
+	padding: 12px;
+}
+
+/* demonstrate border-box on an example element */
+.notes p {
+	max-width: 360px;
+}

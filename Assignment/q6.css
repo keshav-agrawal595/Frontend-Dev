@@ -1,0 +1,45 @@
+.tbox{width:120px;text-align:center}
+
+body {
+	font-family: Arial;
+	margin: 24px;
+}
+
+.transforms {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.tbox {
+	width: 120px;
+	text-align: center;
+}
+
+.demo {
+	background: #ffd166;
+	padding: 24px;
+	border-radius: 6px;
+	transition: all 0.4s ease;
+}
+
+.tbox.rotate .demo:hover {
+	transform: rotate(15deg);
+}
+
+.tbox.scale .demo:hover {
+	transform: scale(1.15);
+}
+
+.tbox.translate .demo:hover {
+	transform: translateX(12px);
+}
+
+.tbox.skew .demo:hover {
+	transform: skewX(10deg);
+}
+
+.tbox figcaption {
+	margin-top: 8px;
+	font-size: 0.9rem;
+}

@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, "Segoe UI", Arial;
+}
+
+.wrap {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+	padding: 20px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.px {
+	width: 200px;
+	height: 150px;
+	background: #6c5ce7;
+}
+
+.pct {
+	width: 50%;
+	min-width: 120px;
+	height: 120px;
+	background: #00b894;
+	max-width: 420px;
+}
+
+.vh {
+	width: 180px;
+	height: 20vh;
+	min-height: 80px;
+	background: #ff7675;
+	overflow: auto;
+	padding: 8px;
+}

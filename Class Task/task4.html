@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4: CSS Selectors</title>
+    <style>
+        p {
+            color: blue;
+        }
+        
+        .red {
+            color: red;
+        }
+        
+        #big {
+            font-size: 2em;
+        }
+        
+        ul li {
+            font-style: italic;
+        }
+        
+        ul > li {
+            font-weight: bold;
+        }
+        
+        h2 + p {
+            background: yellow;
+        }
+        h2 ~ p {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <h2>Heading</h2>
+    <p>Element selector</p>
+    <p class="red">Class selector</p>
+    <p id="big">ID selector</p>
+    <a href="#">Attribute selector</a>
+    <ul>
+        <li>Descendant & Child</li>
+        <li>Another</li>
+    </ul>
+    <p>Adjacent sibling</p>
+</body>
+</html>

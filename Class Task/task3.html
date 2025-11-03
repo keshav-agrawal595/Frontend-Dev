@@ -1,0 +1,51 @@
+<!-- Task 3 Image Showcase Layout
+Six images displayed via Grid/Flexbox.
+Hover = transform: scale(1.1) + dark overlay.
+Rounded corners, box-shadow, and captions (<figcaption>).
+Responsive: single column below 700 px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3 : Image</title>
+    <style>
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .img-box {
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px 8px #0002;
+        }
+        img {
+            height: 200px;
+            width: 200px;
+            display: block;
+            border-radius: 8px;
+        }
+       
+        .img-box:hover img {
+            transform: scale(1.1);
+        }
+        .caption {
+            bottom: 8px;
+            left: 8px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+  <div class="img-box"><img src="1.jpeg" alt="1"><div class="caption">Caption 1</div></div>
+  <div class="img-box"><img src="2.jpg" alt="2"><div class="caption">Caption 2</div></div>
+  <div class="img-box"><img src="3.jpg" alt="3"><div class="caption">Caption 3</div></div>
+  <div class="img-box"><img src="4.jpg" alt="4"><div class="caption">Caption 4</div></div>
+  <div class="img-box"><img src="5.jpg" alt="5"><div class="caption">Caption 5</div></div>
+  <div class="img-box"><img src="6.jpg" alt="6"><div class="caption">Caption 6</div></div>
+</div>
+</body>
+</html>

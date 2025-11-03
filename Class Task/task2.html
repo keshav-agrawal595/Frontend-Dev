@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2: CSS Tooltip</title>
+  <style>
+    .tooltip {
+      cursor: pointer;
+    }
+
+    .tooltip span {
+      visibility: hidden;
+      position: absolute;
+      background: black;
+      color: #fff;
+    }
+
+    .tooltip:hover span {
+      visibility: visible;
+    }
+
+    .info-panel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <h1>ToolTip</h1>
+  <p>Hover over here</p>
+
+  <div class="tooltip">
+    <button>Hover here</button>
+    <span>Description</span>
+  </div>
+
+  <div class="info-panel">
+    <h2>List</h2>
+    <ul>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+    </ul>
+  </div>
+</body>
+</html>

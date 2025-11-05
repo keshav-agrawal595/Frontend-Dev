@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CSS Cheat Sheet</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 2rem;
+        }
+
+        .cheat-sheet {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .cheat-sheet-item {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cheat-sheet-item:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 700px) {
+            .cheat-sheet {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cheat-sheet">
+        <div class="cheat-sheet-item">
+            <h3>Filters</h3>
+            <p>CSS filters like blur, grayscale, and brightness.</p>
+        </div>
+        <div class="cheat-sheet-item">
+            <h3>Media Queries</h3>
+            <p>Adjust layouts for different screen sizes.</p>
+        </div>
+        <div class="cheat-sheet-item">
+            <h3>Responsive Design</h3>
+            <p>Use flexible layouts and relative units.</p>
+        </div>
+        <div class="cheat-sheet-item">
+            <h3>Typography</h3>
+            <p>Scale fonts using clamp() and relative units.</p>
+        </div>
+    </div>
+</body>
+</html>

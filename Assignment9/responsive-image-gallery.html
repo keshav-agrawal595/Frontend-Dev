@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Filter Gallery</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            filter: none;
+        }
+
+        .gallery-item figcaption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .blur img {
+            filter: blur(2px);
+        }
+
+        .grayscale img {
+            filter: grayscale(100%);
+        }
+
+        .sepia img {
+            filter: sepia(100%);
+        }
+
+        .brightness img {
+            filter: brightness(0.7);
+        }
+
+        .contrast img {
+            filter: contrast(150%);
+        }
+
+        .hue-rotate img {
+            filter: hue-rotate(90deg);
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <figure class="gallery-item blur">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Blur">
+            <figcaption>Blur</figcaption>
+        </figure>
+        <figure class="gallery-item grayscale">
+            <img src="https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1400" alt="Grayscale">
+            <figcaption>Grayscale</figcaption>
+        </figure>
+        <figure class="gallery-item sepia">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Sepia">
+            <figcaption>Sepia</figcaption>
+        </figure>
+        <figure class="gallery-item brightness">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Brightness">
+            <figcaption>Brightness</figcaption>
+        </figure>
+        <figure class="gallery-item contrast">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169" alt="Contrast">
+            <figcaption>Contrast</figcaption>
+        </figure>
+        <figure class="gallery-item hue-rotate">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Hue Rotate">
+            <figcaption>Hue Rotate</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

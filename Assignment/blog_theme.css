@@ -1,0 +1,12 @@
+:root {
+  --bs-primary: #ff7a59; /* override primary color */
+  --bs-font-sans-serif: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+
+.card {
+  border: none;
+}

@@ -1,0 +1,8 @@
+/* Simple custom styles for portfolio */
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+.rounded-circle {
+	object-fit: cover;
+}

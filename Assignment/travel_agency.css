@@ -1,0 +1,12 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 60vh;
+}
+
+.progress {
+  margin-top: 1rem;
+}

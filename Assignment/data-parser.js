@@ -1,5 +1,3 @@
-"use strict";
-
 const apiData = ["25", "true", "false", "NaN", " ", "100px", "3.14", null, undefined];
 
 const validNumeric = [];

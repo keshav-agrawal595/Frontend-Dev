@@ -1,5 +1,3 @@
-"use strict";
-
 console.log("=== PREDICTION ===");
 console.log("Output will be:");
 console.log("undefined (outer count hoisted but not initialized)");

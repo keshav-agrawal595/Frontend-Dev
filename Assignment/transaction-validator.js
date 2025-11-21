@@ -1,5 +1,3 @@
-"use strict";
-
 const transactions = [
     { id: 1, amount: 2000 },
     { id: 2, amount: -500 },

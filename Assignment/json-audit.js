@@ -1,5 +1,3 @@
-"use strict";
-
 const rawData = [
     '{"user":"Alex","age":25}',
     '{"id":2}',

@@ -1,5 +1,3 @@
-"use strict";
-
 console.log("=== ORIGINAL CODE (BUGGY) ===");
 console.log("This would produce:");
 console.log("undefined (score is hoisted but not initialized)");

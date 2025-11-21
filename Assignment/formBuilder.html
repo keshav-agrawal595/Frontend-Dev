@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<body>
+<div id="fb"></div>
+<div id="fb-output"></div>
+<script src="formBuilder.js"></script>
+<script>
+const fields=[{type:'text',label:'Username',name:'username'},{type:'password',label:'Password',name:'password'}]
+const builder=new FormBuilder(fields,'fb')
+builder.render()
+const form=document.getElementById('fb-form') || document.querySelector('#fb form')
+if(form) form.addEventListener('submit',e=>{e.preventDefault();document.getElementById('fb-output').textContent=JSON.stringify(builder.getFormData())})
+</script>
+</body>
+</html>

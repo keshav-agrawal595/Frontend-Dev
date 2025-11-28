@@ -1,0 +1,18 @@
+{
+  "students": [
+    {
+      "id": "2c47",
+      "name": "Keshav",
+      "section": "3EA",
+      "marks": "100",
+      "grade": "A+"
+    },
+    {
+      "id": "bfc8",
+      "name": "abc",
+      "section": "A",
+      "marks": "50",
+      "grade": "A+"
+    }
+  ]
+}
